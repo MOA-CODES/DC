@@ -1,7 +1,7 @@
 import { View, Text, Image, SafeAreaView } from 'react-native';
 import React, { useLayoutEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { UserIcon,ChevronDownIcon,SearchIcon,AdjustmentsVerticalIcon, SparklesIcon as SparklesIconOutline, ChevronUpDownIcon, AdjustmentsHorizontalIcon } from "react-native-heroicons/outline";
+import { UserIcon,ChevronDownIcon,MagnifyingGlassIcon ,AdjustmentsVerticalIcon, TextInput,} from "react-native-heroicons/outline";
 // no
 
 const HomeScreen = () => {
@@ -41,13 +41,16 @@ const HomeScreen = () => {
           {/* search */}
 
           <View>
-            <View></View>
+            <View>
+              <MagnifyingGlassIcon color="#00CCBB"/>
+              {/* <TextInput placeholder="Restaurants and cuisines"/> */}
+            </View>
+
             <AdjustmentsVerticalIcon color="#00CCBB"/>
           </View>
-
       </Text>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default HomeScreen
